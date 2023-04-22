@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -18,6 +19,8 @@ public class ContactsPageTest extends TestBase {
 	ContactPage contactPage;
 	HomePage homePage;
 
+	Logger log = Logger.getLogger(ContactsPageTest.class);
+
 	String sheetName = "contacts";
 
 	public ContactsPageTest() {
@@ -34,6 +37,7 @@ public class ContactsPageTest extends TestBase {
 
 	@Test(priority = 1)
 	public void verifyContactsLabel() {
+		log.info("********** STARTING CONTACT PAGE TESTS ************");
 		Assert.assertTrue(contactPage.verifyContactsLabel(), "Contacts Page not Landed");
 	}
 
@@ -58,6 +62,7 @@ public class ContactsPageTest extends TestBase {
 	public void validateCreateNewContact(String fName, String lName, String compName) {
 		homePage.clickOnNewContactLink();
 		contactPage.createNewContact(fName, lName, compName);
+		log.info("********** ENDING CONTACT PAGE TESTS ************");
 	}
 
 	@AfterMethod

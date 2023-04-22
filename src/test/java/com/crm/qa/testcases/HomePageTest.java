@@ -1,5 +1,6 @@
 package com.crm.qa.testcases;
 
+import org.apache.log4j.Logger;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +17,8 @@ public class HomePageTest extends TestBase {
 	HomePage homePage;
 	ContactPage contactPage;
 
+	Logger log = Logger.getLogger(HomePageTest.class);
+
 	public HomePageTest() {
 		super();
 	}
@@ -30,6 +33,7 @@ public class HomePageTest extends TestBase {
 
 	@Test(priority = 1)
 	public void verifyHomePageTitleTest() {
+		log.info("********** STARTING HOME PAGE TESTS ************");
 		String title = homePage.verifyHomePageTitle();
 		Assert.assertEquals(title, "Cogmento CRM", "Home page title not matched");
 	}
@@ -42,6 +46,8 @@ public class HomePageTest extends TestBase {
 	@Test(priority = 3)
 	public void verifyContactsLinkTest() {
 		contactPage = homePage.clickOnContactsLink();
+		log.info("********** ENDING HOME PAGE TESTS ************");
+
 	}
 
 	@AfterMethod
