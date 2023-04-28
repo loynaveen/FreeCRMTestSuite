@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 2 failed,   10 passed</span>
+                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,12 +103,7 @@
                     <div class="method-list-content failed suite-Free_CRM_Application_Test_Automation_Test_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectMultipleContactsTest">selectMultipleContactsTest</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectSingleContactTest">selectSingleContactTest</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContact(Mukta, Sharma, Ebay)">validateCreateNewContact(Mukta, Sharma, Ebay)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Free_CRM_Application_Test_Automation_Test_Suite -->
@@ -137,17 +132,22 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContact(David, Cris, Amazon)">validateCreateNewContact(David, Cris, Amazon)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectMultipleContactsTest">selectMultipleContactsTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContact(Mukta, Sharma, Ebay)">validateCreateNewContact(Mukta, Sharma, Ebay)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="selectSingleContactTest">selectSingleContactTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContact(Komal, Sharma, Google)">validateCreateNewContact(Komal, Sharma, Google)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Free_CRM_Application_Test_Automation_Test_Suite" title="com.crm.qa.testcases.ContactsPageTest" class="method navigator-link" hash-for-method="validateCreateNewContact(David, Cris, Amazon)">validateCreateNewContact(David, Cris, Amazon)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -190,18 +190,19 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectMultipleContactsTest">
-                  </a> <!-- selectMultipleContactsTest -->
-                  <span class="method-name">selectMultipleContactsTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(), &apos;test2 2 test2&apos;)]//parent::td//preceding-sibling::td//div[contains(@class, &apos;checkbox&apos;)]&quot;}
+                  <a name="validateCreateNewContact(Mukta, Sharma, Ebay)">
+                  </a> <!-- validateCreateNewContact(Mukta, Sharma, Ebay) -->
+                  <span class="method-name">validateCreateNewContact</span>
+                  <span class="parameters">(Mukta,Sharma,Ebay)</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementNotInteractableException: element not interactable
   (Session info: chrome=112.0.5615.137)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.6&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [7b4ad5ab84c440191b721121d15d688c, findElement {using=xpath, value=//a[contains(text(), &apos;test2 2 test2&apos;)]//parent::td//preceding-sibling::td//div[contains(@class, &apos;checkbox&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/hd/k0sss5ss03d...}, goog:chromeOptions: {debuggerAddress: localhost:50334}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50334/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 7b4ad5ab84c440191b721121d15d688c
+Command: [a75ed6379e0dc9203e56124b623ea114, clickElement {id=586c294d-5ffa-4ce6-842c-c0d06394d5fd}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/hd/k0sss5ss03d...}, goog:chromeOptions: {debuggerAddress: localhost:49805}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:49805/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on MAC (a75ed6379e0dc9203e56124b623ea114)] -&gt; xpath: //a[contains(@href, &apos;contacts&apos;)]//parent::div//button]
+Session ID: a75ed6379e0dc9203e56124b623ea114
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
@@ -209,46 +210,17 @@ Session ID: 7b4ad5ab84c440191b721121d15d688c
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.crm.qa.pages.ContactPage.selectContact(ContactPage.java:41)
-	at com.crm.qa.testcases.ContactsPageTest.selectMultipleContactsTest(ContactsPageTest.java:51)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:257)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:78)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.lambda$new$0(EventFiringWebDriver.java:378)
+	at jdk.proxy2/jdk.proxy2.$Proxy36.click(Unknown Source)
+	at org.openqa.selenium.support.events.EventFiringWebDriver$EventFiringWebElement.click(EventFiringWebDriver.java:391)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:52)
+	at jdk.proxy2/jdk.proxy2.$Proxy35.click(Unknown Source)
+	at com.crm.qa.pages.HomePage.clickOnNewContactLink(HomePage.java:57)
+	at com.crm.qa.testcases.ContactsPageTest.validateCreateNewContact(ContactsPageTest.java:63)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="selectSingleContactTest">
-                  </a> <!-- selectSingleContactTest -->
-                  <span class="method-name">selectSingleContactTest</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(), &apos;test2 2 test2&apos;)]//parent::td//preceding-sibling::td//div[contains(@class, &apos;checkbox&apos;)]&quot;}
-  (Session info: chrome=112.0.5615.137)
-For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
-Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;13.3.1&apos;, java.version: &apos;17.0.6&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [c026bd0f327229cd6207d6f7e5605d64, findElement {using=xpath, value=//a[contains(text(), &apos;test2 2 test2&apos;)]//parent::td//preceding-sibling::td//div[contains(@class, &apos;checkbox&apos;)]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.137, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: /var/folders/hd/k0sss5ss03d...}, goog:chromeOptions: {debuggerAddress: localhost:50289}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:50289/devtoo..., se:cdpVersion: 112.0.5615.137, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c026bd0f327229cd6207d6f7e5605d64
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
-	at com.crm.qa.pages.ContactPage.selectContact(ContactPage.java:41)
-	at com.crm.qa.testcases.ContactsPageTest.selectSingleContactTest(ContactsPageTest.java:46)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames
+... Removed 38 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -262,18 +234,16 @@ Session ID: c026bd0f327229cd6207d6f7e5605d64
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="validateCreateNewContact(David, Cris, Amazon)">
-                  </a> <!-- validateCreateNewContact(David, Cris, Amazon) -->
-                  <span class="method-name">validateCreateNewContact</span>
-                  <span class="parameters">(David,Cris,Amazon)</span>
+                  <a name="selectMultipleContactsTest">
+                  </a> <!-- selectMultipleContactsTest -->
+                  <span class="method-name">selectMultipleContactsTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="validateCreateNewContact(Mukta, Sharma, Ebay)">
-                  </a> <!-- validateCreateNewContact(Mukta, Sharma, Ebay) -->
-                  <span class="method-name">validateCreateNewContact</span>
-                  <span class="parameters">(Mukta,Sharma,Ebay)</span>
+                  <a name="selectSingleContactTest">
+                  </a> <!-- selectSingleContactTest -->
+                  <span class="method-name">selectSingleContactTest</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -282,6 +252,14 @@ Session ID: c026bd0f327229cd6207d6f7e5605d64
                   </a> <!-- validateCreateNewContact(Komal, Sharma, Google) -->
                   <span class="method-name">validateCreateNewContact</span>
                   <span class="parameters">(Komal,Sharma,Google)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateCreateNewContact(David, Cris, Amazon)">
+                  </a> <!-- validateCreateNewContact(David, Cris, Amazon) -->
+                  <span class="method-name">validateCreateNewContact</span>
+                  <span class="parameters">(David,Cris,Amazon)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -410,58 +388,58 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(12);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'selectSingleContactTest')
+data.setCell(0, 1, 'validateCreateNewContact')
 data.setCell(0, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(0, 3, 11042);
+data.setCell(0, 3, 10873);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'selectMultipleContactsTest')
-data.setCell(1, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(1, 3, 10794);
+data.setCell(1, 1, 'loginTest')
+data.setCell(1, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(1, 3, 10681);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'loginTest')
-data.setCell(2, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(2, 3, 10176);
+data.setCell(2, 1, 'selectSingleContactTest')
+data.setCell(2, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(2, 3, 10562);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyContactsLinkTest')
+data.setCell(3, 1, 'verifyUserNameTest')
 data.setCell(3, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(3, 3, 6835);
+data.setCell(3, 3, 6179);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'verifyUserNameTest')
+data.setCell(4, 1, 'verifyContactsLinkTest')
 data.setCell(4, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(4, 3, 5941);
+data.setCell(4, 3, 6031);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'validateCreateNewContact')
 data.setCell(5, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(5, 3, 4407);
+data.setCell(5, 3, 3601);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'validateCreateNewContact')
 data.setCell(6, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(6, 3, 4204);
+data.setCell(6, 3, 3460);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'validateCreateNewContact')
+data.setCell(7, 1, 'selectMultipleContactsTest')
 data.setCell(7, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(7, 3, 4080);
+data.setCell(7, 3, 1527);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'verifyContactsLabel')
-data.setCell(8, 2, 'com.crm.qa.testcases.ContactsPageTest')
-data.setCell(8, 3, 576);
+data.setCell(8, 1, 'crmLogoImageTest')
+data.setCell(8, 2, 'com.crm.qa.testcases.LoginPageTest')
+data.setCell(8, 3, 765);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'crmLogoImageTest')
-data.setCell(9, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(9, 3, 182);
+data.setCell(9, 1, 'verifyContactsLabel')
+data.setCell(9, 2, 'com.crm.qa.testcases.ContactsPageTest')
+data.setCell(9, 3, 249);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'loginPageTitleTest')
 data.setCell(10, 2, 'com.crm.qa.testcases.LoginPageTest')
-data.setCell(10, 3, 34);
+data.setCell(10, 3, 67);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'verifyHomePageTitleTest')
 data.setCell(11, 2, 'com.crm.qa.testcases.HomePageTest')
-data.setCell(11, 3, 9);
+data.setCell(11, 3, 10);
 window.suiteTableData['Free_CRM_Application_Test_Automation_Test_Suite']= { tableData: data, tableDiv: 'times-div-Free_CRM_Application_Test_Automation_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 58 seconds</span>
+              <span class="suite-total-time">Total running time: 54 seconds</span>
               <div id="times-div-Free_CRM_Application_Test_Automation_Test_Suite">
               </div> <!-- times-div-Free_CRM_Application_Test_Automation_Test_Suite -->
             </div> <!-- times-div -->
@@ -494,153 +472,151 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginPageTitleTest</span>
-                <span class="method-start">12275 ms</span>
+                <span class="method-start">11890 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">12316 ms</span>
+                <span class="method-start">11962 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">12434 ms</span>
+                <span class="method-start">12077 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">crmLogoImageTest</span>
-                <span class="method-start">19970 ms</span>
+                <span class="method-start">20558 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20156 ms</span>
+                <span class="method-start">21327 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">20272 ms</span>
+                <span class="method-start">21446 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">loginTest</span>
-                <span class="method-start">28086 ms</span>
+                <span class="method-start">29421 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38268 ms</span>
+                <span class="method-start">40108 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.HomePageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">38381 ms</span>
+                <span class="method-start">40218 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyHomePageTitleTest</span>
-                <span class="method-start">56715 ms</span>
+                <span class="method-start">58676 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56727 ms</span>
+                <span class="method-start">58688 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">56866 ms</span>
+                <span class="method-start">58806 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserNameTest</span>
-                <span class="method-start">74937 ms</span>
+                <span class="method-start">77324 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">80884 ms</span>
+                <span class="method-start">83510 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">81002 ms</span>
+                <span class="method-start">83625 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLinkTest</span>
-                <span class="method-start">98170 ms</span>
+                <span class="method-start">103204 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">105009 ms</span>
+                <span class="method-start">109241 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.crm.qa.testcases.ContactsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">105341 ms</span>
+                <span class="method-start">109353 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyContactsLabel</span>
-                <span class="method-start">129526 ms</span>
+                <span class="method-start">134751 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">130105 ms</span>
+                <span class="method-start">135005 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">130220 ms</span>
+                <span class="method-start">135117 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">selectSingleContactTest</span>
-                <span class="method-start">155894 ms</span>
+                <span class="method-start">160881 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">166943 ms</span>
+                <span class="method-start">171448 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">167056 ms</span>
+                <span class="method-start">171561 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">selectMultipleContactsTest</span>
-                <span class="method-start">192229 ms</span>
+                <span class="method-start">195761 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">203028 ms</span>
+                <span class="method-start">197292 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">203648 ms</span>
+                <span class="method-start">197892 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCreateNewContact(Komal, Sharma, Google)</span>
-                <span class="method-start">227892 ms</span>
+                <span class="method-start">225877 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">232100 ms</span>
+                <span class="method-start">229482 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">232212 ms</span>
+                <span class="method-start">229591 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">validateCreateNewContact(David, Cris, Amazon)</span>
-                <span class="method-start">258388 ms</span>
+                <span class="method-start">256129 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">262474 ms</span>
+                <span class="method-start">259595 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">setUp</span>
-                <span class="method-start">262587 ms</span>
+                <span class="method-start">259736 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">validateCreateNewContact(Mukta, Sharma, Ebay)</span>
-                <span class="method-start">286658 ms</span>
+                <span class="method-start">285636 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">291068 ms</span>
+                <span class="method-start">296514 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
