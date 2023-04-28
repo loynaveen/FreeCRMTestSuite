@@ -43,13 +43,13 @@ public class ContactsPageTest extends TestBase {
 
 	@Test(priority = 2)
 	public void selectSingleContactTest() {
-		contactPage.selectContact("test2 2 test2");
+		contactPage.selectContact("Komal Sharma");
 	}
 
 	@Test(priority = 3)
 	public void selectMultipleContactsTest() {
-		contactPage.selectContact("test2 2 test2");
-		contactPage.selectContact("test test test");
+		contactPage.selectContact("Komal Sharma");
+		contactPage.selectContact("Komal Sharma");
 	}
 
 	@DataProvider

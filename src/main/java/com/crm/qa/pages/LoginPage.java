@@ -9,12 +9,10 @@ import com.crm.qa.base.TestBase;
 public class LoginPage extends TestBase {
 
 	public LoginPage() {
-		super();
-
 		// TODO Auto-generated constructor stub
 		PageFactory.initElements(driver, this);
 	}
-	
+
 	@FindBy(xpath = "//span[contains(text(), 'Log In')]")
 	WebElement enterLoginPageButton;
 

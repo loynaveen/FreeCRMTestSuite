@@ -14,7 +14,7 @@ public class HomePage extends TestBase {
 		PageFactory.initElements(driver, this);
 
 	}
-	
+
 	@FindBy(xpath="//a[contains(@href, 'contacts')]//parent::div//button")
 	WebElement addContact;
 
@@ -52,10 +52,10 @@ public class HomePage extends TestBase {
 	public Boolean verifyCorrectUserName() {
 		return userNameLabel.isDisplayed();
 	}
-	
+
 	public void clickOnNewContactLink() {
 		addContact.click();
 	}
-	
+
 
 }
